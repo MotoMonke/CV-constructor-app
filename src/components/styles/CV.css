@@ -1,0 +1,106 @@
+.resume {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    /**/
+    flex: 1 1 700px;
+  }
+  
+  .resume section {
+    margin-bottom: 2rem;
+  }
+  
+  .resume h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+  
+  .resume .name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume .email,
+  .resume .phone,
+  .resume .linkedIn {
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    color: #555;
+  }
+  
+  .resume ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+  
+  .resume ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .resume .position {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+  
+  .resume .company, 
+  .resume .duration, 
+  .resume .school-name {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.2rem;
+  }
+  
+  .resume .description ul {
+    list-style-type: circle;
+    margin-left: 1.5rem;
+  }
+  
+  .resume .display-personal-info {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  /*Print and save buttons*/
+  .print-save-btn {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .print-save-btn button {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .print-save-btn button:hover {
+    background-color: #555;
+  }
+  /*Printing*/
+  @media print {
+    .resume {
+      box-shadow: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    button {
+      display: none;
+    }
+  }
+  
